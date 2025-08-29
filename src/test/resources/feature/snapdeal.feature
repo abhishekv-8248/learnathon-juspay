@@ -1,8 +1,7 @@
-Feature: Snapdeal login and shopping automation
+Feature: Snapdeal E-commerce Flow
 
-  Scenario: Login and add product to cart
+  Scenario: Login and add the first available product to the cart
     Given user is on Snapdeal homepage
     When user logs in with mobile number
-    And user searches for "Shoes"
-    And user adds first product to the cart
+    And user adds the first available product to the cart
     Then user should see the product in the cart
